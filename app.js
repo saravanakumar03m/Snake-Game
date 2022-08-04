@@ -37,7 +37,7 @@ function main(currentTime){ // currentTime gives sys time at which this fn execu
     if(gameOver){
         enable()
         if(confirm('you lost. press ok to restart.')){
-            window.location = 'https://saravanakumar03m.github.io/Snake-Game/'
+            window.location.href
         }
         return
     }
