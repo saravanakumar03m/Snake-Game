@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./style.css">  
+</head>
+<body>
+    <div id="topbar">
+        <h1 id="score">Score: 0</h1>
+        <div id="speed-control">
+            <label for="input-speed">Snake Speed</label>
+            <input name="input-speed" type="range" min="1" max="10" class="slider" id="speedRange" value="1">
+            <output id="speed-disp"></output>
+        </div>
+        <h1 id="heading">Snake Game</h1>
+        <button id="create-obstacles">Create Obstacles</button>
+        <button id="start" onclick="start()">Start</button>
+    </div>
+    <div id="content-area">
+        <div id="game-board"></div>
+    </div>
+    <script src="./app.js" defer type="module"></script>
+    <!-- defre type module to import and export elements among diff js files -->
+</body>
+</html>
